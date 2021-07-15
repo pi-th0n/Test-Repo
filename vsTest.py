@@ -1,6 +1,4 @@
-from sys import executable, version
-
 import requests
 
-name = input("Your name? ")
-print(f"Hello, {name}!")
+r = requests.get("https://pi-th0n.github.io/")
+print(r.status_code)
